@@ -1,0 +1,200 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #F4AAB2, #E94B3C, #F0806E, #2A3141); /* Degradado de rosa, morado, rojo y negro */
+    color: #343a40; /* Color de texto */
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #F4AAB2, #E94B3C, #F0806E, #2A3141); /* Degradado atractivo para el fondo */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+    animation: animarTitulo 1s ease-out; /* Animación para el título */
+}
+
+/* Animación para el título */
+@keyframes animarTitulo {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+nav {
+    margin-top: 20px;  /* Agregar espacio superior al menú */
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #FF4500; /* Cambio de fondo al pasar el ratón */
+    text-decoration: underline;
+}
+
+/* Sección "Inicio" */
+#inicio {
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+/* Galería de imágenes */
+.galeria-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.imagen {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Sección "Programas Emitidos" */
+#programasEmitidos {
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+/* Sección de videos */
+#videos {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.videos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+video {
+    border: 3px solid #FFFFFF;
+    border-radius: 8px;
+}
+
+/* Sección "Contacto" */
+#contacto {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    background-color: #FFFFFF;
+    color: #343a40;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Botones */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Encabezados de secciones */
+section h2 {
+    color: white;
+}
+
+/* Menú responsivo */
+.menu-hamburguesa {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        width: 100%;
+    }
+
+    #menu li {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Clase de ocultar elementos */
+.oculto {
+    display: none;
+}
